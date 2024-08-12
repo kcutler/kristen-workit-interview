@@ -1,6 +1,8 @@
 .Clinic-Dashboard h1,
 .Clinic-Dashboard p,
-.Clinic-Dashboard a {
+.Clinic-Dashboard a,
+.Clinic-Dashboard .tile-header-left,
+.Clinic-Dashboard .tile-container {
   font-family: "Poppins", sans-serif;
   color: hsl(205, 32%, 23%);
 }
@@ -10,7 +12,9 @@
 }
 
 .Clinic-Dashboard p,
-.Clinic-Dashboard a {
+.Clinic-Dashboard a,
+.Clinic-Dashboard .tile-header-left,
+.Clinic-Dashboard .tile-header-right {
   font-size: 0.8rem;
 }
 
@@ -22,4 +26,43 @@
 .Clinic-Dashboard .dashboard-content {
   background: hsl(0, 0%, 95%);
   min-height: 100vh;
+}
+
+.Clinic-Dashboard .tile-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  padding: 32px;
+}
+
+.Clinic-Dashboard .tile {
+  background: white;
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+.Clinic-Dashboard .tile-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 0 0 16px;
+}
+
+.Clinic-Dashboard .tile-header-border {
+  margin: 0 -16px;
+  border-bottom: 1px solid hsl(225, 9%, 91%); 
+}
+
+.Clinic-Dashboard .tile-header-right {
+  color: hsl(225, 9%, 91%);
+}
+
+.Clinic-Dashboard .tile-row {
+  display: flex;
+  text-decoration: none;
+  padding: 16px 0 0;
+}
+
+.Clinic-Dashboard .tile-row img {
+  margin-right: 8px;
 }
